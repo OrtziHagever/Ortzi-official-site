@@ -1,0 +1,70 @@
+.navbar .menu li {
+    display: inline-block; /* מציג את הפריטים בצורה אופקית */
+    margin: 0 15px; /* רווחים בין הפריטים */
+}
+
+.navbar .menu li a {
+    text-decoration: none; /* ביטול קו תחתון */
+    color: white; /* צבע טקסט לבן */
+    background-color: #007BFF; /* רקע כחול */
+    padding: 10px 20px; /* ריפוד מסביב לטקסט */
+    border-radius: 5px; /* פינות מעוגלות */
+    font-size: 16px; /* גודל גופן */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* אנימציה */
+}
+
+/* כשמעבירים מעל הלינקים */
+.navbar .menu li a:hover {
+    background-color: #0056b3; /* צבע כהה יותר כשמעבירים */
+    transform: translateY(-2px); /* אפקט של הרמה */
+}
+
+/* כשיש מיקוד על הלינק */
+.navbar .menu li a:focus {
+    outline: none; /* ביטול קו עיפרון */
+    background-color: #0056b3; /* אותו צבע כהה בעת מיקוד */
+}
+
+/* עיצוב כללי */
+body {
+    font-family: Arial, sans-serif; /* בחרתי גופן נעים לקריאה */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* רקע כללי בהיר */
+}
+
+
+
+
+
+/* עיצוב עבור כותרת ותפריט */
+.header {
+    background-color: #333; /* רקע כהה לכותרת */
+    padding: 20px 0;
+}
+
+/* עיצוב עבור התפריט */
+.navbar .menu {
+    list-style: none; /* לביטול רמות מספור */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* ממורכז */
+}
+
+
+.font {
+    font-style: inherit;
+    background-image: url('istockphoto-1488726223-612x612.jpg');
+    background-size: cover; /* Makes sure the background covers the element */
+    background-position: center; /* Centers the background image */
+    color: rgb(255, 241, 241); /*ברוכים הבאים! */
+    text-shadow: 2px 2px 5px rgb(105, 8, 143); /* Add shadow for better text visibility */
+    padding: 20px; /* Add some padding around the text */
+    width: 700;
+    height: 70;
+    text-align: center;
+   
+
+
+
+    

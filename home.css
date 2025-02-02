@@ -1,0 +1,176 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+    background-image: url('background'); /* שים כאן את הנתיב לתמונה שלך */
+    background-size: cover; /* שומר על התמונה ממלאת את הרקע */
+    background-position: center; /* ממרכז את התמונה */
+    background-repeat: no-repeat; /* מונע חזרה על התמונה אם היא קטנה מדי */
+}
+
+corner {
+    display: flex; /* מאפשר להציב את התמונות בשורה */
+    justify-content: center; /* מיישר את התמונות לאמצע */
+    gap: 20px; /* רווח בין התמונות */
+    margin-top: 50px;
+}
+
+a {
+    display: block; /* מאפשר לתמונה להיות קליקבילית */
+    text-decoration: none;
+}
+
+.image {
+    width: 200px;  /* שינוי רוחב התמונה */
+    height: 350px;  /* שינוי גובה התמונה */
+    object-fit: cover;  /* שומר על יחס התמונות */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+}
+
+img {
+    display: block; /* מניעת מרווחים לא רצויים מתחת לתמונה */
+}
+
+
+.header {
+    background-color: rgb(235, 255, 9);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.navbar .menu a {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    background-color: rgb(227, 252, 7);
+    border-radius: 5px;
+}
+
+.content {
+    text-align: center;
+}
+
+
+
+
+
+.welcome {
+    font-style: inherit;
+    background-image: url('orange-widescreen-background-perfect-banner-poster-social-media-template-online-web-ads_7954-46724.avif');
+    background-size: cover; /* Makes sure the background covers the element */
+    background-position: center; /* Centers the background image */
+    color: rgb(0, 0, 0); /*ברוכים הבאים! */
+    text-shadow: 2px 2px 5px gold; /* Add shadow for better text visibility */
+    padding: 20px; /* Add some padding around the text */
+    width: 700;
+    height: 70;
+    text-align: center;
+   
+    
+    
+}
+/* עיצוב כללי */
+body {
+    font-family: Arial, sans-serif; /* בחרתי גופן נעים לקריאה */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* רקע כללי בהיר */
+}
+
+
+
+
+
+/* עיצוב עבור כותרת ותפריט */
+.header {
+    background-color: #333; /* רקע כהה לכותרת */
+    padding: 20px 0;
+}
+
+/* עיצוב עבור התפריט */
+.navbar .menu {
+    list-style: none; /* לביטול רמות מספור */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* ממורכז */
+}
+
+
+
+
+
+.navbar .menu li {
+    display: inline-block; /* מציג את הפריטים בצורה אופקית */
+    margin: 0 15px; /* רווחים בין הפריטים */
+}
+
+.navbar .menu li a {
+    text-decoration: none; /* ביטול קו תחתון */
+    color: white; /* צבע טקסט לבן */
+    background-color: #007BFF; /* רקע כחול */
+    padding: 10px 20px; /* ריפוד מסביב לטקסט */
+    border-radius: 5px; /* פינות מעוגלות */
+    font-size: 16px; /* גודל גופן */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* אנימציה */
+}
+
+/* כשמעבירים מעל הלינקים */
+.navbar .menu li a:hover {
+    background-color: #0056b3; /* צבע כהה יותר כשמעבירים */
+    transform: translateY(-2px); /* אפקט של הרמה */
+}
+
+/* כשיש מיקוד על הלינק */
+.navbar .menu li a:focus {
+    outline: none; /* ביטול קו עיפרון */
+    background-color: #0056b3; /* אותו צבע כהה בעת מיקוד */
+}
+
+
+
+
+
+.news {
+    background-color: #f4f4f4;
+    color: #333; /* צבע טקסט */
+    font-style: italic;
+    font-weight: 100;
+    text-align: center; /* מרכז את הטקסט */
+    border: 2px solid #ccc; /* קווים מסביב */
+    border-radius: 10px; /* פינות מעוגלות */
+    padding: 20px; /* ריפוד פנימי */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    width: 80%;  
+    max-width: 800px;  
+    margin: 50px auto; 
+}
+
+

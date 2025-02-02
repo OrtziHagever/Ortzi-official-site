@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="Sign-In.css">]
+<link rel="stylesheet" href="home.css">
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+
+
+     <header class="header">
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="home.html">דף הבית</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הירשם</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .checkbox-label {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>הירשם למערכת</h2>
+        <form id="signupForm">
+            <label for="name">שם מלא:</label>
+            <input type="text" id="name" name="name" required>
+
+            <div class="checkbox-label">
+                <input type="checkbox" id="confirmName" required>
+                <label for="confirmName">כן כן, זה השם שלי</label>
+            </div>
+
+            <button type="submit">הירשם</button>
+        </form>
+    </div>
+
+    <script>
+        // טיפול בטופס ההרשמה
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // מונע את שליחת הטופס כרגיל
+
+            // קבלת השם שהוזן
+            var name = document.getElementById("name").value;
+            var confirmName = document.getElementById("confirmName").checked;
+
+            // בדיקת אם המשתמש אישר את השם
+            if (confirmName) {
+                // הגעת לאישור והעבר לדף home.html
+                alert("ברוך הבא, " + name);
+                window.location.href = "home.html"; // הפניה לדף הבית
+            } else {
+                // אם לא סימן את תיבת הסימון, תציג הודעה
+                alert("עליך לאשר את השם שלך.");
+            }
+        });
+    </script>
+
+</body>
+</html>

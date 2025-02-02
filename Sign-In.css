@@ -1,0 +1,13 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+    background-image: url('background'); /* שים כאן את הנתיב לתמונה שלך */
+    background-size: cover; /* שומר על התמונה ממלאת את הרקע */
+    background-position: center; /* ממרכז את התמונה */
+    background-repeat: no-repeat; /* מונע חזרה על התמונה אם היא קטנה מדי */
+}
